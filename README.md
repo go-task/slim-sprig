@@ -1,46 +1,11 @@
 # Slim-Sprig: Template functions for Go templates [![GoDoc](https://godoc.org/github.com/go-task/slim-sprig?status.svg)](https://godoc.org/github.com/go-task/slim-sprig) [![Go Report Card](https://goreportcard.com/badge/github.com/go-task/slim-sprig)](https://goreportcard.com/report/github.com/go-task/slim-sprig)
 
-<<<<<<< HEAD
 Slim-Sprig is a fork of [Sprig](https://github.com/Masterminds/sprig), but with
 all functions that depend on external (non standard library) or crypto packages
 removed.
 The reason for this is to make this library more lightweight. Most of these
 functions (specially crypto ones) are not needed on most apps, but costs a lot
 in terms of binary size and compilation time.
-=======
-[![GoDoc](https://img.shields.io/static/v1?label=godoc&message=reference&color=blue)](https://pkg.go.dev/github.com/Masterminds/sprig/v3)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Masterminds/sprig)](https://goreportcard.com/report/github.com/Masterminds/sprig)
-[![Stability: Sustained](https://masterminds.github.io/stability/sustained.svg)](https://masterminds.github.io/stability/sustained.html)
-[![](https://github.com/Masterminds/sprig/workflows/Tests/badge.svg)](https://github.com/Masterminds/sprig/actions)
-
-The Go language comes with a [built-in template
-language](http://golang.org/pkg/text/template/), but not
-very many template functions. Sprig is a library that provides more than 100 commonly
-used template functions.
-
-It is inspired by the template functions found in
-[Twig](http://twig.sensiolabs.org/documentation) and in various
-JavaScript libraries, such as [underscore.js](http://underscorejs.org/).
-
-## IMPORTANT NOTES
-
-Sprig leverages [mergo](https://github.com/imdario/mergo) to handle merges. In
-its v0.3.9 release, there was a behavior change that impacts merging template
-functions in sprig. It is currently recommended to use v0.3.10 or later of that package.
-Using v0.3.9 will cause sprig tests to fail.
-
-## Package Versions
-
-There are two active major versions of the `sprig` package.
-
-* v3 is currently stable release series on the `master` branch. The Go API should
-  remain compatible with v2, the current stable version. Behavior change behind
-  some functions is the reason for the new major version.
-* v2 is the previous stable release series. It has been more than three years since
-  the initial release of v2. You can read the documentation and see the code
-  on the [release-2](https://github.com/Masterminds/sprig/tree/release-2) branch.
-  Bug fixes to this major version will continue for some time.
->>>>>>> 581758eb7d96ae4d113649668fa96acc74d46e7f
 
 ## Usage
 
