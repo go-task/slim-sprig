@@ -1,4 +1,4 @@
-module github.com/go-task/slim-sprig
+module github.com/go-task/slim-sprig/v3
 
 go 1.20
 
