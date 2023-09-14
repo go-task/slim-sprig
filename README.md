@@ -13,7 +13,7 @@ in terms of binary size and compilation time.
 detailed instructions and code snippets for the >100 template functions available.
 
 **Go developers**: If you'd like to include Slim-Sprig as a library in your program,
-our API documentation is available [at GoDoc.org](http://godoc.org/github.com/go-task/slim-sprig).
+our API documentation is available [at pkg.go.dev](https://pkg.go.dev/github.com/go-task/slim-sprig/v3).
 
 For standard usage, read on.
 
@@ -26,7 +26,7 @@ To load the Slim-Sprig `FuncMap`:
 import (
   "html/template"
 
-  "github.com/go-task/slim-sprig"
+  "github.com/go-task/slim-sprig/v3"
 )
 
 // This example illustrates that the FuncMap *must* be set before the
