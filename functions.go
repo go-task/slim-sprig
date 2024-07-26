@@ -18,8 +18,7 @@ import (
 //
 // Use this to pass the functions into the template engine:
 //
-// 	tpl := template.New("foo").Funcs(sprig.FuncMap()))
-//
+//	tpl := template.New("foo").Funcs(sprig.FuncMap()))
 func FuncMap() template.FuncMap {
 	return HtmlFuncMap()
 }
@@ -314,4 +313,8 @@ var genericMap = map[string]interface{}{
 	// URLs:
 	"urlParse": urlParse,
 	"urlJoin":  urlJoin,
+
+	// IP Addresses:
+	"isIPv4": isIPv4,
+	"isIPv6": isIPv6,
 }
