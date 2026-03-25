@@ -245,6 +245,10 @@ var genericMap = map[string]interface{}{
 	"osDir":   filepath.Dir,
 	"osExt":   filepath.Ext,
 	"osIsAbs": filepath.IsAbs,
+	"osAbs": func(p string) string {
+		abs, _ := filepath.Abs(p)
+		return abs
+	},
 
 	// Encoding:
 	"b64enc": base64encode,

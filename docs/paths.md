@@ -112,3 +112,14 @@ The above returns `.bar` on Linux and Windows, respectively.
 ### osIsAbs
 
 To check whether a file path is absolute, use `osIsAbs`.
+
+### osAbs
+
+Return the absolute representation of a path. If the path is not absolute, it will be joined with the current working directory.
+
+```
+osAbs "foo/bar"
+osAbs "../config"
+```
+
+The above returns the absolute path based on the current working directory, e.g. `/home/user/foo/bar`.
